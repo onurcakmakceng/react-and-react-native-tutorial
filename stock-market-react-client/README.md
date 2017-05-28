@@ -25,5 +25,9 @@
   ```terminal
   npm install -g create-react-app
   ```
+* Daha sonra bu “create-react-app” komutunu kullanarak “stock-market-react-client” isminde bir React projesi oluşturunuz:
+  ```terminal
+  create-react-app stock-market-react-client
+  ```
 
 ## Borsa Uygulaması Web İstemcisi Yapımı
