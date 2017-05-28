@@ -47,6 +47,6 @@ Geliştirilen projede:
 - https://facebook.github.io/react-native/
 - http://angulartr.com/angular-2-ve-react-kapismasi/
 - http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png
-- https://www.youtube.com/watch?v=z14df09bWfc                       
+- https://www.youtube.com/watch?v=-AbaV3nrw6E&list=PL6gx4Cwl9DGBuKtLgPR_zWYnrwv-JllpA&index=1                    
 - https://github.com/ReactTraining/react-fundamentals/tree/hosting
 
