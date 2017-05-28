@@ -22,7 +22,5 @@ public DataSource dataSource() {
 ...
 ```
 * Eğer stock-market-webservice projesini kapatıp yeniden açma gibi durumlar yaşayacaksanız her seferinde veri tabanının baştan oluşturulması yerine isterseniz ilk çalıştırmadan sonra [HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java) sınıfının içinde hibernateProperties() fonksiyonundaki "hibernate.hbm2ddl.auto" özelliğini “create” modundan “update” moduna alarak önceden oluşturulmuş veri tabanını kullanabilirsiniz.
-<br/>
-<br/>
 ### [HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java)
 [Ana Rehbere Geri Dön](../README.md)
