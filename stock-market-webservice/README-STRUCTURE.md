@@ -67,4 +67,4 @@ Web servisimiz [stock-market-webservice]() klasöründe hazır bir Maven projesi
   * getLastRecordsOfAllStocks = Tüm hisselerin son hisse kayıtlarını döndürür. Aynı zamanda bir önceki kayıtlarına göre artış-azalış-sabit olma durumlarını "lastLotValueChange" değişkeninde -1, 0 veya 1 değerleriyle döndürmektedir. Arayüzde hisselerin listelenmesi için kullanılacaktır. Hizmet verdiği url: http://localhost:8080/stock-market-webservice/api/getLastRecordsOfAllStocks şeklindedir
 #### [-->Bir Sonraki Adıma Geç: React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapım Rehberi](../stock-market-react-client)
 #### [--Ana Rehbere Geri Dön](../README.md)
-#### [<--Bir Önceki Adım](/README.md)
+#### [<--Bir Önceki Adım](README.md)
