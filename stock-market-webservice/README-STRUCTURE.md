@@ -40,4 +40,29 @@ Web servisimiz [stock-market-webservice]() klasöründe hazır bir Maven projesi
   ...
   ```
 * Projede önemli olan noktalardan biri de resources altındaki [import.sql](src/main/java/com/stock_market_webservice/resources/import.sql) dosyası ile örnek borsa verilerinin veri tabanına ekleniyor olmasıdır. Örnek veri olarak 5 Borsa İstanbul şirketinin 2015-2016 arlığındaki hisse bilgileri kullanılmıştır.
+* JSON veri iletişimini sağlayan RestController sınıfımız ([StockRecordController](src/main/java/com/stock_market_webservice/controllers/)) aşağıdaki gibidir:  
+  ````java
+    ...imports
+
+   @RestController
+   public class StockRecordController {
+       @Autowired
+       private StockRecordService stockRecordService;
+
+       @CrossOrigin
+       @RequestMapping(value="/api/getAllRecordsOfStock/{stockName}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+       public ResponseEntity getAllRecordsOfStock(@PathVariable String stockName) {
+           return ResponseEntity.status(HttpStatus.OK).body(stockRecordService.getAllRecordsOfStock(stockName) );
+       }
+
+       @CrossOrigin
+       @RequestMapping(value="/api/getLastRecordsOfAllStocks", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+       public ResponseEntity getLastRecordsOfAllStocks() {
+           return ResponseEntity.status(HttpStatus.OK).body(stockRecordService.getLastRecordsOfAllStocks() );
+       }
+   }
+  ```
+* Burada istemcilerimize hizmet etmek üzere iki fonksiyonumuz vardır:
+  * getAllRecordsOfStock = Hisse adını (stocName) url parametresi olarak alır, o hisseye adına ait bütün hisse kayıtlarını geri döndürür. Arayüzde grafik çizdirilmesi için kullanılacaktır. Hizmet verdiği url: http://localhost:8080/stock-market-webservice/api/getAllRecordsOfStock/{stockName} şeklindedir.
+  * getLastRecordsOfAllStocks = Tüm hisselerin son hisse kayıtlarını döndürür. Aynı zamanda bir önceki kayıtlarına göre artış-azalış-sabit olma durumlarını "lastLotValueChange" değişkeninde -1, 0 veya 1 değerleriyle döndürmektedir. Arayüzde hisselerin listelenmesi için kullanılacaktır. Hizmet verdiği url: http://localhost:8080/stock-market-webservice/api/getLastRecordsOfAllStocks şeklindedir
 #### [<--Ana Rehbere Geri Dön](../README.md)
