@@ -7,7 +7,7 @@ Web servisimiz [stock-market-webservice]() klasöründe hazır bir Maven projesi
 (Başka bir IDE ile açmanız durumunda açtıktan sonra Maven çalıştırma konfigürasyonu oluşturmanız ve "jetty:run" ifadesini konfigürasyonun komut satırı parametresi alanına eklemeniz gerekmektedir.)
 * Proje IntelliJ'de açıldıktan sonra projedeki [runConfigurations](runConfigurations) klasörünü aşağıdaki resimde gösterildiği gibi .idea klasörünün içine sürükleyiniz (kes yapıştır).  
    ![runConfig-1](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-webservice%20readme%20images/runConfig-1.png)
-* Bu sayede çalıştırma konfigürasyonunuz hazırlanmış olacaktır. Artık sağ üst köşede oluşan çalıştırma konfigürasyonu sayesinde Spring Web Servis projemizi çalıştırabiliriz.
+* Bu sayede çalıştırma konfigürasyonunuz hazırlanmış olacaktır. Artık sağ üst köşede oluşan çalıştırma konfigürasyonu sayesinde Spring Web Servis projemizi çalıştırabiliriz.  
    ![runConfig-2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-webservice%20readme%20images/runConfig-2.png)
 *  http://localhost:8080/ adresi React (web) ve React Native (mobil) istemcilerimizin hizmetine sunulmuştur ve rehberimizin ilerleyen kısımlarında kullanılabilmesi için açık bırakmanız gerekmektedir.
 ### Notlar:
