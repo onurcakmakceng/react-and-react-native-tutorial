@@ -29,5 +29,16 @@
   ```terminal
   create-react-app stock-market-react-client
   ```
-
+* Bu komuttan sonra bulunduğunuz konumda “stock-market-react-client” isminde bir klasör oluşmuş olmalıdır. Daha sonra bu proje klasörünün içine girip “npm start” komutu ile sunucuyu başlatınız:
+  ```terminal
+  cd stock-market-react-client
+  npm start
+  ```
+* Şimdi tarayıcınızdan “http://localhost:3000” adresine girerek React istemcinizin çalışıp çalışmadığını kontrol edebilirsiniz. Şu şekilde bir ekranla karşılaşmanız gereklidir:
+![welcome-to-react](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/welcome-to-react.bmp)
+* Artık dosyaları değiştirerek geliştirme yapmaya başlayabilirsiniz. Sunucu, dosyalar üzerinde yaptığınız değişiklikleri fark edip her değişiklikten sonra yazdığınız JSX kodlarını derleyerek tarayıcınızın çalıştırabileceği JavaScript koduna dönüştürecektir. Bu yüzden sunucunuzu hiç kapatıp açmadan anlık olarak kod üzerinde yaptığınız değişiklikleri “http://localhost:3000” adresine girerek sayfanızda görüntüleyebilirsiniz.
 ## Borsa Uygulaması Web İstemcisi Yapımı
+Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu projeyi geliştirerek ilerleyecektir. Bir önceki aşamada (NPM ile React Kurulumu) oluşturulan proje üzerinden devam edilecektir. Uygulama 5 adet şirketin borsa verilerini (hisse kaydı tarihi, hisse adı, hisse değeri, hisse sayısı, toplam değeri, hisse değeri değişimi gibi) oluşturmuş olduğumuz Spring RESTful web servis’ten çekerek kullanıcıya liste şeklinde sunar. Listedeki her şirketin yanında “Grafiği Oluştur” veya “Grafiği Kaldır” butonları bulunur. “Grafiği Oluştur” butonuna tıklandığında şirketin 2015-2016 aralığında hisse değeri verisi yine Spring RESTful web servisten çekilerek oluşturulan grafik bileşeninde sergilenir. “Grafiği Kaldır” butonu ise oluşturulmuş grafik bileşenini kaldırır.
+### React ile Oluşturulacak Web İstemcisinin Yapısı:
+![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/project_structure.png)
+
