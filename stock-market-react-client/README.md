@@ -43,7 +43,29 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
 ![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/project_structure.png)
 ![component_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/component_structure.png)
 * React, tek sayfa uygulaması(single-page application) yapmak için kullanılır. Bu tarz uygulamalar bileşen(component) tabanlıdır. Sayfada gördüğünüz neredeyse herşey bir bileşendir ve bazı bileşenler başka bileşenlerin çocuğu şeklindedir.
-* Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe “...\stock-market-react-client\public\index.html” dosyasına bakıldığında;
+* Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe [public/index.html](public/index.html) dosyasının body etiketleri arasına bakıldığında;
+  ```html
+  ...
+   <body>
+     <noscript>
+       You need to enable JavaScript to run this app.
+     </noscript>
+     <div id="root"></div>
+     <!--
+       This HTML file is a template.
+       If you open it directly in the browser, you will see an empty page.
+
+       You can add webfonts, meta tags, or analytics to this file.
+       The build step will place the bundled scripts into the <body> tag.
+
+       To begin the development, run `npm start` or `yarn start`.
+       To create a production bundle, use `npm run build` or `yarn build`.
+     -->
+   </body>
+  </html>
+  ```
+  Gördüğünüz gibi id’si “root” olan içi boş bir div bulunmaktadır.
+* [src/index.js](src/index.js) dosyası incelendiğinde;
 
 #### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
 #### [--Ana Rehbere Geri Dön](../README.md)
