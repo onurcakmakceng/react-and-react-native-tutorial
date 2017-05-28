@@ -1,5 +1,5 @@
 # React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapım Rehberi
-## React Başlangıç İçin
+## Başlangıç
 #### (Not: Bu bölümdeki anlatımlar rehberin devamında kullanacağımız ortamı hazırlamak için olan kurulum adımları değildir. Rehberde esas alınacak kurulum adımları NPM ile React Kurulumunun anlatıldığı bir sonraki başlıktadır.)
 * React’ı birkaç şekilde kullanmaya başlayabilirsiniz. Eğer sadece denemek/incelemek istiyorsanız CodePen’deki [“Hello, world!”](https://codepen.io/gaearon/pen/rrpgNB?editors=0010) uygulamasına göz atabilirsiniz.
 * Denemek yerine geliştirme yapmaya başlamak istiyorsanız birinci yöntem olarak; HTML dosyanızın içine React kütüphanesini kaynak olarak vererek geliştirme yapmaya başlayabilirsiniz. Bunun için şu iki JavaScript kütüphanesini HTML dosyasına eklemeniz gerekmektedir:
@@ -41,4 +41,5 @@
 Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu projeyi geliştirerek ilerleyecektir. Bir önceki aşamada (NPM ile React Kurulumu) oluşturulan proje üzerinden devam edilecektir. Uygulama 5 adet şirketin borsa verilerini (hisse kaydı tarihi, hisse adı, hisse değeri, hisse sayısı, toplam değeri, hisse değeri değişimi gibi) oluşturmuş olduğumuz Spring RESTful web servis’ten çekerek kullanıcıya liste şeklinde sunar. Listedeki her şirketin yanında “Grafiği Oluştur” veya “Grafiği Kaldır” butonları bulunur. “Grafiği Oluştur” butonuna tıklandığında şirketin 2015-2016 aralığında hisse değeri verisi yine Spring RESTful web servisten çekilerek oluşturulan grafik bileşeninde sergilenir. “Grafiği Kaldır” butonu ise oluşturulmuş grafik bileşenini kaldırır.
 ### React ile Oluşturulacak Web İstemcisinin Yapısı:
 ![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/project_structure.png)
+* React, tek sayfa uygulaması(single-page application) yapmak için kullanılır. Bu tarz uygulamalar bileşen(component) tabanlıdır. Sayfada gördüğünüz neredeyse herşey bir bileşendir ve bazı bileşenler başka bileşenlerin çocuğu şeklindedir.
 
