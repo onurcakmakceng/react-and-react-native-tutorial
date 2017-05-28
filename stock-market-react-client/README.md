@@ -19,4 +19,11 @@
 * Bu şekilde çalışan örnek bir [HTML dosyası](https://facebook.github.io/react/downloads/single-file-example.html)
 * Dilerseniz [babeljs.io](https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&code=ReactDOM.render(%0A%20%20%20%20%3Ch2%3EMerhaba!%3C%2Fh2%3E%0A)%3B) sitesinden JSX halinde yazdığınız kodların nasıl JavaScript’e çevrildiğini inceleyebilirsiniz.
 ## NPM ile React Kurulumu ve Ortamın Hazırlanması
+* Geliştirme yapmaya başlamak, React projesi oluşturmak için bir başka yöntem ise npm kullanmaktır. Bu rehberde yukarıdaki yöntemler değil, npm kullanılarak oluşturulmuş bir proje üzerinden ilerlenecektir. Npm, JavaScript için bir paket yöneticisidir (package manager). JavaScript geliştiricilerinin kod paylaşmasını ve paylaşılan kodların güncellenmesini kolaylaştırır. Projenizi geliştirirken ihtiyaç duyduğunuz kütüphaneleri tek komutla yüklemenizi sağlar.
+* Npm’i kullanmaya başlamak için bilgisayarınıza Node.js kurmanız gerekmektedir. Npm, Node.js ile birlikte yüklenir. Bu yüzden önce linkten [Node.js indirip](https://nodejs.org/en/) bilgisayarınıza kurunuz. Bu işlemden sonra npm komutlarını kullanmaya başlayabilirsiniz.
+* Yeni bir React projesi oluşturmak için önce “npm install” komutu ile “create-react-app” paketini indiriniz:
+  ```terminal
+  npm install -g create-react-app
+  ```
+
 ## Borsa Uygulaması Web İstemcisi Yapımı
