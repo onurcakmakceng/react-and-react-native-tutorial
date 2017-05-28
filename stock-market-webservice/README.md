@@ -6,7 +6,7 @@ Web servisimiz [stock-market-webservice]() klasöründe hazır bir Maven projesi
 * Daha sonrasında stock-market-webservice klasörünü IntelliJ veya başka bir IDE ile Maven projesi olarak açınız.
 * Artık Spring Web Servis projemizi çalıştırabiliriz. http://localhost:8080/ adresi React (web) ve React Native (mobil) istemcilerimizin hizmetine sunulmuştur ve rehberimizin ilerleyen kısımlarında kullanılabilmesi için açık bırakmanız gerekmektedir.
 ### Notlar:
-#### ([src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java) Konfigürasyonları)
+##### ([src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java) Konfigürasyonları)
 * Eğer PostgreSQL veri tabanının şifresi “toor” yerine başka bir şey ayarlanmak veya scheme adı olarak “stock_market_webservice” yerine başka bir şey kullanılmak isteniyorsa bunu [HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java) sınıfının dataSource() fonksiyonundan ayarlayabilirsiniz.
 ```java
 ...
@@ -22,5 +22,5 @@ public DataSource dataSource() {
 ...
 ```
 * Eğer stock-market-webservice projesini kapatıp yeniden açma gibi durumlar yaşayacaksanız her seferinde veri tabanının baştan oluşturulması yerine isterseniz ilk çalıştırmadan sonra [HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java) sınıfının içinde hibernateProperties() fonksiyonundaki "hibernate.hbm2ddl.auto" özelliğini “create” modundan “update” moduna alarak önceden oluşturulmuş veri tabanını kullanabilirsiniz.
-### [HibernateConfiguration.java](src/main/java/com/stock_market_webservice/configuration/HibernateConfiguration.java)
-[Ana Rehbere Geri Dön](../README.md)
+#### [-->Bir Sonraki Adıma Geç: Borsa Uygulaması Spring MVC Web Servisi Yapısı](README-STRUCTURE.md)
+#### [<--Ana Rehbere Geri Dön](../README.md)
