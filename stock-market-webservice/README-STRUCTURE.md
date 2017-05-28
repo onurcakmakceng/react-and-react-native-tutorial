@@ -65,4 +65,5 @@ Web servisimiz [stock-market-webservice]() klasöründe hazır bir Maven projesi
 * Burada istemcilerimize hizmet etmek üzere iki fonksiyonumuz vardır:
   * getAllRecordsOfStock = Hisse adını (stocName) url parametresi olarak alır, o hisseye adına ait bütün hisse kayıtlarını geri döndürür. Arayüzde grafik çizdirilmesi için kullanılacaktır. Hizmet verdiği url: http://localhost:8080/stock-market-webservice/api/getAllRecordsOfStock/{stockName} şeklindedir.
   * getLastRecordsOfAllStocks = Tüm hisselerin son hisse kayıtlarını döndürür. Aynı zamanda bir önceki kayıtlarına göre artış-azalış-sabit olma durumlarını "lastLotValueChange" değişkeninde -1, 0 veya 1 değerleriyle döndürmektedir. Arayüzde hisselerin listelenmesi için kullanılacaktır. Hizmet verdiği url: http://localhost:8080/stock-market-webservice/api/getLastRecordsOfAllStocks şeklindedir
+#### [-->Bir Sonraki Adıma Geç: React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapım Rehberi](/stock-market-react-client)
 #### [<--Ana Rehbere Geri Dön](../README.md)
