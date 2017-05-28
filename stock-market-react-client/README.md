@@ -46,5 +46,6 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
 * Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe “...\stock-market-react-client\public\index.html” dosyasına bakıldığında;
 
 #### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
-#### [<--Ana Rehbere Geri Dön](../README.md)
+#### [--Ana Rehbere Geri Dön](../README.md)
+#### [<--Bir Önceki Adım](../stock-market-webservice/README-STRUCTURE.md)
 
