@@ -1,5 +1,5 @@
 # React ve React Native Uygulamalı Başlangıç Rehberi
-Anlatıma yardımcı olması için basit bir Borsa Uygulaması (Simple Stock Market App) geliştirilmişdir. Geliştirilen proje 3 modülden oluşmaktadır.
+Anlatıma yardımcı olması için basit bir web ve mobil Borsa Uygulaması (Simple Stock Market App) geliştirilmişdir. Geliştirilen proje 3 modülden oluşmaktadır.
 * Web istemci olarak React
 * Mobil istemci olarak React Native
 * Web servis olarak Spring MVC kullanılmıştır.  
@@ -8,7 +8,13 @@ React, bileşen tabanlı tek sayfalı web uygulamaları yapmak için geliştiril
 </br>
 </br>
   <img src="http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" width="350" alt="react-logo">  
-İşleri kolaylaştırmak için eski tarz JavaScript yerine JSX kullanır...
+React Kullanmanın Avantajları:
+* Kolay kullanım,
+* Daha anlaşılır ve sade kodlar,
+* Hızlı öğrenme (JSX için temel JavaScript ve HTML bilgisi yeterli sadece),
+* Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş (Kodu bir kere yazıp her yerde kullanabilme). 
+* JSX sayesinde derleme anında hataların tespit edilmesi
+
 ## Borsa Uygulaması Spring MVC Web Servisi Kurulumu ve Yapısı:
 * Web ve mobil istemcilerini yapmaya başlamadan önce veri iletişimi kuracakları web servisi hazır hale getirmeniz gerekmektedir. Bunun için oluşturduğumuz [Spring MVC Web Servisi Kurulum Rehberine](stock-market-webservice/README.md) bakınız.
 * Daha sonrasında ise web servisin yapısını, kullanılan model sınıfını ve RestController'ı, RESTful fonksiyonları ve url adreslerini görüp anlayabilmek için oluşturduğumuz [Spring MVC Web Servisi Yapısına](stock-market-webservice/README-STRUCTURE.md) bakınız.
