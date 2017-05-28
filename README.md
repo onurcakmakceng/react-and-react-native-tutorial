@@ -42,4 +42,9 @@ Geliştirilen projede:
 ### React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapımı
 * React web istemcisini gerçekleştirdikten sonra React Native ile Borsa Uygulaması mobil web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberine](StockMarketReactNativeClient/README.md) bakınız.
 
+## Kaynaklar:
+- https://facebook.github.io/react/
+- https://facebook.github.io/react-native/
+- http://angulartr.com/angular-2-ve-react-kapismasi/
+- http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png
 
