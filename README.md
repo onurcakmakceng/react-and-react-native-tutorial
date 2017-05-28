@@ -23,8 +23,10 @@ React Kullanmanın Avantajları:
 ## Geliştirilen Borsa Uygulaması
 Geliştirilen projede:
 * Spring web servisi, PostgreSQL veri tabanına 5 BIST şirketinin 2015-2016 yılları arasındaki hisse değerlerinin kaydını oluşturacak ve bunları RESTful servis olarak hizmete sunacak,
+![database](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/main%20readme%20images/database.PNG)
 * React web istemcisi, RESTful Spring web servisimiz ile JSON veri alış verişinde bulunup ekranda hisselerin son değerlerini listeleyebilecek ve her şirketin 1 senelik hisse değeri grafiğini ekrana çizebilecektir.
-* Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini mobil uygulamada yapabilecek.
+* Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini mobil uygulamada yapabilecek.  
+(Not: Bu proje, belirli bir aralığa ait örnek bir data oluşturularak yapıldığı için veriler günümüz canlı borsa verileri değildir. Bunun nedeni, proje amacının öğretici bir React rehberi hazırlamak olmasıdır. Eğer güncel verilerle canlı bir borsa uygulaması yapılmak istenirse React ve React Native istemcileri çeşitli Borsa API'lerine bağlanabilir/iletişim kurdurulabilir. (Örnek: https://apiportal.akbank.com/)
 
 ## Borsa Uygulaması Spring MVC Web Servisi Kurulumu ve Yapısı
 * Web ve mobil istemcilerini yapmaya başlamadan önce veri iletişimi kuracakları web servisi hazır hale getirmeniz gerekmektedir. Bunun için oluşturduğumuz [Spring MVC Web Servisi Kurulum Rehberine](stock-market-webservice) bakınız.
