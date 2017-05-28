@@ -40,6 +40,6 @@ Geliştirilen projede:
 * Web servis kurulumunu tamamladıktan sonra React ile Borsa Uygulaması web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapım Rehberine](stock-market-react-client) bakınız.
 
 ### React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapımı
-* React web istemcisini gerçekleştirdikten sonra React Native ile Borsa Uygulaması mobil web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberine](StockMarketReactNativeClient) bakınız.
+* React web istemcisini gerçekleştirdikten sonra React Native ile Borsa Uygulaması mobil web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberine](StockMarketReactNativeClient/README.md) bakınız.
 
 
