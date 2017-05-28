@@ -8,10 +8,11 @@ Windows için öncelikle Node, Python2 ve JDK kurulumu yapmanız gerekmektedir. 
 https://chocolatey.org/
  
 Sitesinden indirdikten sonra(Sizde yüklü olanları atlayınız. JDK8 yüklemeniz gerektiğini unutmayınız.):
- 
+```terminal
 choco install nodejs.install 
 choco install python2 
 choco install jdk8
+```
  
 komutlarıyla gereken kurulumları yapabilirsiniz.
  
@@ -23,13 +24,15 @@ Sitesinden Linux dağıtımınıza göre Node.js indirip kurabilirsiniz.
  
  
 macOS için Homebrew kullanarak Node.js ve Watchman kurunuz:
- 
+```terminal
 brew install node
 brew install watchman
+```
  
 İşletim sisteminize göre gereken kurulumları yaptıktan sonra:
- 
+```terminal
 npm install -g react-native-cli
+```
  
 Komutu ile React Native’i kurabilirsiniz.
  
@@ -76,18 +79,21 @@ Control Panel → System and Security → System → Change settings → Advance
 Linux için:
  
 ~/.profile dosyasına(veya linux dağıtımınıza göre eşdeğerine) aşağıdaki satırları ekleyiniz:
- 
+```terminal
 export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+```
  
 macOS için:
- 
+
 ~/.profile dosyasına aşağıdaki satırları ekleyiniz:
  
+```terminal
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+```
  
 ANDROID_HOME çevresel değişkenini ayarladıktan sonra açık olan shell ekranlarınızı(varsa) kapatıp tekrar açınız(değişikliklerin yansıması için).
  
@@ -101,10 +107,11 @@ Sonrasında bu sanal android cihazını başlattığınızda karşınıza bir an
 
  
 Bu sanal cihaz açıkken aşağıdaki komutları bir shell ekranından çalıştırınız:
- 
+```terminal
 react-native init StockMarketReactNativeClient
 cd StockMarketReactNativeClient
-react-native run-android 
+react-native run-android
+```
  
 Burada “StockMarketReactNativeClient” isminde bir proje oluşturmuş ve bunu çalıştırmış oldunuz. 
  
@@ -125,6 +132,7 @@ Proje yapısı:
  
  
 Title.js
+```jsx
 import React, { Component } from 'react';
 import {
    Text
@@ -139,9 +147,11 @@ export default class Title extends Component {
        );
    }
 }
+```
  
  
 StockList.js
+```jsx
 import React, { Component } from 'react';
 import {
    View
@@ -172,9 +182,10 @@ export default class StockList extends Component {
        );
    }
 }
- 
+```
  
 Stock.js
+```jsx
 import React, { Component } from 'react';
 import {
    Text,
@@ -226,9 +237,11 @@ export default class Stock extends Component {
        );
    }
 }
+```
  
  
 StockGraph.js
+```jsx
 import React, { Component } from 'react';
 import { View} from 'react-native';
  
@@ -303,8 +316,10 @@ export default class StockGraph extends Component {
        )
    }
 }
+```
  
 Index.android.js
+```jsx
 /**
 * Sample React Native App
 * https://github.com/facebook/react-native
@@ -332,6 +347,7 @@ export default class ReactNativeProject extends Component {
 }
  
 AppRegistry.registerComponent('ReactNativeProject', () => ReactNativeProject);
+```
  
 Görüldüğü gibi render() fonksiyonlarında döndürülen içeriklerdeki etiketler dışında bileşenlerin yapısında çok fazla değişiklik yapılmamıştır. Bu etiketlerin değişmesinin sebebi yazdığımız uygulamanın native android uygulaması olacak olmasıdır. Bu yüzden android’in kendi bileşenleri kullanılarak uygulamanın geliştirilmesi gerekiyor. Örneğin div yerine view, onClick yerine onPress kullanılması gibi. Bu yüzdendir ki Facebook, React’ın sitesinde slogan olarak “Write once, run anywhere.” değil, “Learn once, write anywhere.” sloganını kullanmıştır.
  
