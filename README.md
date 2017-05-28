@@ -31,7 +31,14 @@ Geliştirilen projede:
   
 </br>(Not: Bu proje, belirli bir aralığa ait örnek bir data oluşturularak yapıldığı için veriler günümüz canlı borsa verileri değildir. Bunun nedeni, proje amacının öğretici bir React rehberi hazırlamak olmasıdır. Eğer güncel verilerle canlı bir borsa uygulaması yapılmak istenirse React ve React Native istemcileri çeşitli Borsa API'lerine bağlanabilir/iletişim kurdurulabilir. (Örnek: https://apiportal.akbank.com/)
 
-## Borsa Uygulaması Spring MVC Web Servisi Kurulumu ve Yapısı
+### Borsa Uygulaması Spring MVC Web Servisi Kurulumu ve Yapısı
 * Web ve mobil istemcilerini yapmaya başlamadan önce veri iletişimi kuracakları web servisi hazır hale getirmeniz gerekmektedir. Bunun için oluşturduğumuz [Spring MVC Web Servisi Kurulum Rehberine](stock-market-webservice) bakınız.
 * Daha sonrasında ise web servisin yapısını, kullanılan model sınıfını ve RestController'ı, RESTful fonksiyonları ve url adreslerini görüp anlayabilmek için oluşturduğumuz [Spring MVC Web Servisi Yapısına](stock-market-webservice/README-STRUCTURE.md) bakınız.
+
+### React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapımı
+* Web servis kurulumunu tamamladıktan sonra React ile Borsa Uygulaması web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Kurulumu ve Borsa Uygulaması Web İstemcisi Yapım Rehberine](stock-market-react-client) bakınız.
+
+### React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapımı
+* React web istemcisini gerçekleştirdikten sonra React Native ile Borsa Uygulaması mobil web istemcisi yapımını adım adım gerçekleştirmek için oluşturduğumuz [React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberine](StockMarketReactNativeClient) bakınız.
+
 
