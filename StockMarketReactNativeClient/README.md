@@ -1,4 +1,4 @@
-#React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberin
+# React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberin
 Tutorial’in bu kısmından sonra aynı uygulamanın react-native ile oluşturulmuş android hali incelenecektir. Bunun için öncelikle react-native ve geliştirme yapmak için gereken diğer bileşenler kurulmalıdır.
  
 Kurulum aşamasında;
