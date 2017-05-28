@@ -43,4 +43,8 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
 ![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/project_structure.png)
 ![component_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/component_structure.png)
 * React, tek sayfa uygulaması(single-page application) yapmak için kullanılır. Bu tarz uygulamalar bileşen(component) tabanlıdır. Sayfada gördüğünüz neredeyse herşey bir bileşendir ve bazı bileşenler başka bileşenlerin çocuğu şeklindedir.
+* Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe “...\stock-market-react-client\public\index.html” dosyasına bakıldığında;
+
+#### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
+#### [<--Ana Rehbere Geri Dön](../README.md)
 
