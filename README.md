@@ -1,8 +1,11 @@
 # React ve React Native Uygulamalı Başlangıç Rehberi
 Anlatıma yardımcı olması için basit bir web ve mobil Borsa Uygulaması (Simple Stock Market App) geliştirilmişdir. Geliştirilen proje 3 modülden oluşmaktadır.
-* Web istemci olarak React (Modül Klasörü: [stock-market-react-client](stock-market-webservice))
-* Mobil istemci olarak React Native (Modül Klasörü: [stock-market-react-native-client](stock-market-webservice))
-* Web servis olarak Spring MVC kullanılmıştır. (Modül Klasörü: [stock-market-webservice](stock-market-webservice))
+* Web istemci olarak React 
+  * (Modül Klasörü: [stock-market-react-client](stock-market-react-client))
+* Mobil istemci olarak React Native 
+  * (Modül Klasörü: [StockMarketReactNativeClient](StockMarketReactNativeClient))
+* Web servis olarak Spring MVC kullanılmıştır. 
+  * (Modül Klasörü: [stock-market-webservice](stock-market-react-client))
 
 ## React Nedir, Neden React?
 React, bileşen tabanlı tek sayfalı web uygulamaları yapmak için geliştirilmiş açık kaynak kodlu bir JavaScript kütüphanesidir. Daha kolay, rahat ve hızlı bir şekilde web istemcisi yapılabilmesini sağlar. Geliştirilen istemci, web servisi (Backend) kısmında istenen teknolojideki servisle kolayca iletişim kurabilir. Web istemcisinin arayüz işlemlerini (arayüzün dinamikleştirilmesini) kolaylaştırır ve güzel bir görünüm sunar. Facebook şirketinin önderliğinde geliştirilmiştir. Bu yüzden gittikçe daha da popülerleşmekte, kullanımı yaygınlaşmaktadır ve sağlanan destek de üst düzeydedir. 2013 Mart’ta ilk sürümünün çıkmış olmasına rağmen günümüzde en son 15.5.4 versiyonu çıkmıştır ve bu da ne kadar büyük bir hızla geliştiğini, ilgi gördüğünü göstermektedir.
@@ -17,8 +20,11 @@ React Kullanmanın Avantajları:
 * Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş (Kodu bir kere yazıp her yerde kullanabilme). 
 * JSX sayesinde derleme anında hataların tespit edilmesi
 
-## Geliştireceğimiz Borsa Uygulaması
-tutorialda sppring ile bi web servise bağlanmış bir web istemci react ile bir de mobile istemci react native ile yapıcaz mobili react->recct native geçişinin ne kadar kolay olduğunu göstermek için yapıcaz. Buraya konan klasörlerden adı şu olan şu şu olan şu şu da şu. 
+## Geliştirilen Borsa Uygulaması
+Geliştirilen projede:
+* Spring web servisi, PostgreSQL veri tabanına 5 BIST şirketinin 2015-2016 yılları arasındaki hisse değerlerinin kaydını oluşturacak ve bunları RESTful servis olarak hizmete sunacak,
+* React web istemcisi, RESTful Spring web servisimiz ile JSON veri alış verişinde bulunup ekranda hisselerin son değerlerini listeleyebilecek ve her şirketin 1 senelik hisse değeri grafiğini ekrana çizebilecektir.
+* Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini mobil uygulamada yapabilecek.
 
 ## Borsa Uygulaması Spring MVC Web Servisi Kurulumu ve Yapısı
 * Web ve mobil istemcilerini yapmaya başlamadan önce veri iletişimi kuracakları web servisi hazır hale getirmeniz gerekmektedir. Bunun için oluşturduğumuz [Spring MVC Web Servisi Kurulum Rehberine](stock-market-webservice) bakınız.
