@@ -11,7 +11,7 @@ React, bileşen tabanlı tek sayfalı web uygulamaları yapmak için geliştiril
 React Kullanmanın Avantajları:
 * Kolay kullanım,
 * Daha anlaşılır ve sade kodlar,
-* Hızlı öğrenme (JSX için temel JavaScript ve HTML bilgisi yeterli sadece),
+* Hızlı öğrenme (JSX Javascript kodlamak gibidir. Sadece temel JavaScript ve HTML bilgisi yeterlidir),
 * Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş (Kodu bir kere yazıp her yerde kullanabilme). 
 * JSX sayesinde derleme anında hataların tespit edilmesi
 
