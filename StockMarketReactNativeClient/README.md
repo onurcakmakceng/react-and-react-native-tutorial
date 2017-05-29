@@ -1,5 +1,5 @@
 # React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberin
-Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında oluşturduğumuz Borsa Uygulaması web istemcisi üzerinde değişiklikler yapılarak ilerlenecektir. Öncelikle react-native ile Android mobil uygulama geliştirmek için gereken diğer bileşenler kurulmalıdır.
+Borsa Uygulamasının mobil versionu için rehberimizin bir önceki aşamasında oluşturduğumuz Borsa Uygulaması web istemcisi üzerinde değişiklikler yapılarak ilerlenecektir. Öncelikle react-native ile Android mobil uygulama geliştirmek için gereken diğer bileşenler kurulmalıdır.
  
 ## Kurulum ve Ortamın Hazırlanması
 * Windows için öncelikle Node, Python2 ve JDK kurulumu yapmanız gerekmektedir. React kısmında Node yüklediyseniz Python2 ve JDK yeterli olacaktır. Bunları hızlıca yükleyebilmek adına Windows için popüler bir paket yöneticisi olan [Chocolatey’i](https://chocolatey.org/) kullanabilirsiniz. Sitesinden indirdikten sonra sizde yüklü olanları atlayarak;
@@ -8,11 +8,11 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
   choco install python2 
   choco install jdk8
   ```
- komutlarıyla gereken kurulumları yapabilirsiniz. (JDK8 yüklemeniz gerektiğini unutmayınız)
+  komutlarıyla gereken kurulumları yapabilirsiniz. (JDK8 yüklemeniz gerektiğini unutmayınız)
 
 * Linux için npm’i edinebilmek adına [Node.js](https://nodejs.org/en/download/package-manager/) yüklemeniz yeterlidir. 
 
-* macOS için Homebrew kullanarak Node.js ve Watchman kurunuz:
+* macOS için [Homebrew](https://brew.sh/index_tr.html) kullanarak Node.js ve Watchman kurunuz:
   ```terminal
   brew install node
   brew install watchman
@@ -72,7 +72,7 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
 * ANDROID_HOME çevresel değişkenini ayarladıktan sonra açık olan shell ekranlarınızı (varsa) kapatıp tekrar açınız (değişikliklerin yansıması için).
 * Bu adımlardan sonra “AVD Manager” ekranından  
   ![avd-icon](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/avd-icon.jpg)  
-  var olan bir AVD(Android Virtual Device)’nizi düzenleyerek (edit) aşağıdaki ayarları verebilir ya da aşağıdaki ayarlarla yeni bir tane oluşturabilirsiniz:
+  var olan bir AVD’nizi (Android Virtual Device) düzenleyerek (edit) aşağıdaki ayarları verebilir ya da aşağıdaki ayarlarla yeni bir tane oluşturabilirsiniz:
   ```  
   Device: "Android 6.0 - API Level 23"
   CPU/ABI: “Intel Atom (x86_64)”
@@ -89,12 +89,13 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
 * Burada “StockMarketReactNativeClient” isminde bir proje oluşturmuş ve bunu çalıştırmış oldunuz. 
   (Not: Özellikle Windows sistemlerde proje klasörünün path’i çok uzun olmamalı. Bu yüzden bu projeyi yerel disklerinizden birinin hemen altına oluşturmanız önerilir.)
 * Bu adımdan sonra android sanal cihazınıza baktığınızda uygulamanızın açıldığını göreceksiniz (Henüz boş bir uygulama)
-* Artık geliştirme yapmaya başlayabilirsiniz. Kodda yaptığınız değişiklikler android sanal makinenizdeki uygulamanıza iki defa “R” tuşuna bastığınız anda yansıyacaktır.
-* React Native, React ile aynı mantık üzerine kuruludur. React Native ile yaptığınız mobil uygulamalar mobil platformun kendi bileşenleri(component’leri) kullanılarak oluşturulur. Bundan dolayı React Native ile yaptığınız uygulamalar, uygulamanın içine tarayıcı gömülmüş şekilde değil, native android uygulaması olarak oluşur. Bu yüzden hibrid bir mobil uygulamaya göre çok daha avantajlıdır. 
+* Artık geliştirme yapmaya başlayabilirsiniz. Kodda yaptığınız değişiklikler android sanal makinenizdeki uygulamanıza art arda iki defa “R” tuşuna bastığınız anda yansıyacaktır. (Biraz hızlı basmanız gerekmektedir)
+* React Native, React ile aynı mantık üzerine kuruludur. React Native ile yaptığınız mobil uygulamalar mobil platformun kendi bileşenleri (component) kullanılarak oluşturulur. Bundan dolayı React Native ile yaptığınız uygulamalar, uygulamanın içine tarayıcı gömülmüş şekilde değil, native android uygulaması olarak oluşur. Bu yüzden hibrid bir mobil uygulamaya göre çok daha avantajlıdır. 
 * React Projesinden aşağıdaki React Native uygulama yapımımıza göre Title.js, StockList.js, Stock.js, StockGraph.js, package.json dosyalarını yerleştirelim. Ayrıca index.js dosyasını da index.android.js olarak taşıyalım
   ### Proje Yapısı:  
   ![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/project_structure.png)
-* Şimdi oluşturduğumuz dosyaların içeriklerini aşağıdaki şekilde değiştirelim. Burada değinmemiz gereken nokta sadece HTML etiketlerini mobil bileşen etiketlerine dönüştürerek ve proje ismi gibi ufak yerlerde değişiklikler yaparak React Native'e geçişin nasıl sağlandığına dikkat edilmeli.
+* Şimdi oluşturduğumuz dosyaların içeriklerini aşağıdaki şekilde değiştirelim. (Not: StockList.js ve StockGraph.js dosyalarında 192.168.0.14 yazan axios.get() fonksiyonu çağrılarına kendi web serverınızın bulduğu bilgisayarın IP adresini vermeniz gerekmektedir.)
+* Burada değinmemiz gereken nokta sadece HTML etiketlerini mobil bileşen etiketlerine dönüştürerek ve proje ismi gibi ufak yerlerde değişiklikler yaparak React Native'e geçişin nasıl sağlandığına dikkat edilmeli.
   #### Title.js
   ````jsx
   import React, { Component } from 'react';
