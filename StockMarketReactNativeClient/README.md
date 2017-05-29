@@ -146,7 +146,7 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
          );
      }
   }
-  ```
+  ````
 
   #### Stock.js
   ````jsx
@@ -342,9 +342,10 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
   }
   ````
  
-* Görüldüğü gibi render() fonksiyonlarında döndürülen içeriklerdeki etiketler dışında bileşenlerin yapısında çok fazla değişiklik yapılmamıştır. Bu etiketlerin değişmesinin sebebi yazdığımız uygulamanın native android uygulaması olacak olmasıdır. Bu yüzden android’in kendi bileşenleri kullanılarak uygulamanın geliştirilmesi gerekiyor. Örneğin div yerine view, onClick yerine onPress kullanılması gibi. Bu yüzdendir ki Facebook, React’ın sitesinde slogan olarak “Write once, run anywhere.” değil, “Learn once, write anywhere.” sloganını kullanmıştır.
+* Görüldüğü gibi render() fonksiyonlarında döndürülen içeriklerdeki etiketler dışında bileşenlerin yapısında çok fazla değişiklik yapılmamıştır. Bu etiketlerin değişmesinin sebebi yazdığımız uygulamanın native android uygulaması olacak olmasıdır. Bu yüzden android’in kendi bileşenleri kullanılarak uygulamanın geliştirilmesi gerekiyor. Örneğin div yerine view, onClick yerine onPress kullanılması gibi. Bu yüzdendir ki Facebook, React’ın sitesinde slogan olarak sadece “Write once, run anywhere.” değil, daha da ötesinde “Learn once, write anywhere.” sloganını kullanmıştır.
 * Bunun dışında kulanılan bazı kütüphaneler değişebilir. StockGraph bileşeninin React Native versiyonunda farklı bir grafik çizdirme kütüphanesi kullanılmıştır. Bunun da sebebi yine bileşenlerin android’e uyumlu olması gerekliliğidir.
-* Görüldüğü üzere tutorial kapsamında kısa bir sürede ufak değişikliklerle hem bir web uygulaması hem de bir android uygulaması geliştirilmiştir.
-
+* Görüldüğü üzere tutorial kapsamında kısa bir sürede ufak değişikliklerle hem bir web uygulaması hem de bir android uygulaması geliştirilmiştir.  
+  <img src="https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/react_native_final.gif" width="400" alt="react_native_final">  
+  
 #### [--Ana Rehbere Geri Dön](../README.md)
 #### [<--Bir Önceki Adım](../stock-market-react-client)
