@@ -114,10 +114,8 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
   ````
 * En yukarıda “import Title from './Title';” şeklinde oluşturduğumuz Title bileşenini import etmeyi unutmayınız. 
  
-* Şimdi eğer “npm start” komutuyla başlattığınız sunucuyu kapatmadıysanız, http://localhost:3000 ’e girdiğinizde karşınıza bu sayfa çıkmalı:
- 
-
- 
+* Şimdi eğer “npm start” komutuyla başlattığınız sunucuyu kapatmadıysanız, http://localhost:3000 ’e girdiğinizde karşınıza bu şekilde bir sayfa çıkmalı:  
+  ![just_title2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/just_title2.png)
 * Görüğünüz gibi App bileşeni yerine Title bileşeni index.html içine eklendi. Şimdi borsa uygulamasının diğer bileşenlerinin dosyalarını da “...\stock-market-react-client\src” klasörü altına oluşturunuz. Oluşturulacak dosyaların isimleri ve içerikleri:
 #### StockGraph.js
 ```jsx
@@ -208,13 +206,10 @@ export default StockList;
  
 * Değinilmesi gereken ikinci konu; gördüğünüz gibi “index.js” dosyasında “Title” ve “StockList” bileşenleri bir div’in içine alınarak yazıldı. Ancak bunlar zaten index.html’de id’si “root” olan bir div’in içinde yer alacaklar. Neden ikinci bir div oluşturuldu? Bunun sebebi React’ın döndürülen her içeriğin en dış katmanda tek etikette olmasını istemesidir. Bileşenleri incelerseniz hiç birinde en üst katmanda iki etiket(Örneğin iki div: ```<div><div/> <div><div/>```) döndürülmemiştir.
  
-* Değinilmesi gereken üçüncü konu ise; buradaki bileşenler kaba taslak halleriyle hazırlanmıştır. Şu an içlerinde herhangi bir mantık yoktur. Bu haliyle “http://localhost:3000”’e girdiğinizde karşınıza işlevsiz bir sayfa gelecektir.
+* Değinilmesi gereken üçüncü konu ise; buradaki bileşenler kaba taslak halleriyle hazırlanmıştır. Şu an içlerinde herhangi bir mantık yoktur. Bu haliyle “http://localhost:3000”’e girdiğinizde karşınıza işlevsiz bir sayfa gelecektir.  
+  ![https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/without_app_logic3.png](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/without_app_logic3.png)
  
-
- 
-* Tutorail’in ilerleyen kısmında uygulama geliştirilecektir.
- 
-* Şimdi StockList(Stock bileşenlerinin listesini içeren bileşen) ve Stock bileşenleri üzerinde yapılacak değişiklikler ile uygulamanın gerçekten web servisten veri çekerek hisse bilgileri vermesi sağlanacaktır.
+* Rehberin ilerleyen kısmında uygulama geliştirilecektir. Şimdi StockList(Stock bileşenlerinin listesini içeren bileşen) ve Stock bileşenleri üzerinde yapılacak değişiklikler ile uygulamanın gerçekten web servisten veri çekerek hisse bilgileri vermesi sağlanacaktır.
  
 * “...\stock-market-react-client\src\StockList.js”  dosyasına giriniz. Dosyayı şu şekilde değiştiriniz:
 
@@ -407,8 +402,7 @@ export default StockList;
   ````
  
 * Bu adımdan sonra uygulama çalışacaktır ve görüntüsü şu şekilde olacaktır:
- 
-
+  ![without_graph2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/without_graph2.png)
  
 * Görüldüğü üzere veriler başarıyla çekilmiş ve listeye eklenmiştir. Daha önce bakıldığında “Grafiği Oluştur” ve “Grafiği Kaldır” şeklinde iki buton varken şimdi “Grafiği Oluştur” isminde tek buton var. Bu butona tıklandığında verilerin olduğu satırın hemen altında “Grafiği daha sonra ekleyeceğiz.” yazısı oluşup buton kaybolmakta ve yerine “Grafiği Kaldır” butonu gelmektedir.
  
@@ -503,6 +497,7 @@ export default StockList;
   ````
  
 * Gördüğünüz gibi kısa bir süre içinde bir single-page application yapmış olduk. Bileşen mantığını, bileşen oluşturma ve kaldırmayı, bileşenlerin props ve state verilerini set etmeyi ve state’ini değiştirmeyi, başka kütüphaneler kullanmayı, istek yapmayı, isteğin cevabına göre döngüsel şekilde bileşen oluşturmayı, fonksiyonları ve olay ele almayı(event handling) görmüş olduk.
+  !(complete2.)[https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png]
 
 
 #### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
