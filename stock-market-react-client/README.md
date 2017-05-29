@@ -119,7 +119,7 @@ export default Title;
 
  
 * Görüğünüz gibi App bileşeni yerine Title bileşeni index.html içine eklendi. Şimdi borsa uygulamasının diğer bileşenlerinin dosyalarını da “...\stock-market-react-client\src” klasörü altına oluşturunuz. Oluşturulacak dosyaların isimleri ve içerikleri:
-StockGraph.js
+#### StockGraph.js
 ```jsx
 import React, { Component } from 'react';
  
@@ -136,7 +136,7 @@ class Title extends Component {
 export default Title;
 ```
  
-Stock.js
+#### Stock.js
 ```jsx
 import React, { Component } from 'react';
  
@@ -166,7 +166,7 @@ export default Stock;
 ```
  
  
-StockList.js
+#### StockList.js
 ```jsx
 import React, { Component } from 'react';
 import Stock from './Stock';
