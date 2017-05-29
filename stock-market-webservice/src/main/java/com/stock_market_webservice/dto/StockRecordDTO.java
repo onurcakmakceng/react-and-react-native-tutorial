@@ -9,13 +9,13 @@ public class StockRecordDTO implements Serializable {
 
     private StockRecord stockRecord;
 
-    private int lastLotValueChange;
+    private String lastLotValueChange;
 
     public StockRecordDTO(){
 
     }
 
-    public StockRecordDTO(StockRecord stockRecord, int lastLotValueChange){
+    public StockRecordDTO(StockRecord stockRecord, String lastLotValueChange){
         this.setStockRecord(stockRecord);
         this.setLastLotValueChange(lastLotValueChange);
     }
@@ -28,11 +28,11 @@ public class StockRecordDTO implements Serializable {
         this.stockRecord = stockRecord;
     }
 
-    public int getLastLotValueChange() {
+    public String getLastLotValueChange() {
         return lastLotValueChange;
     }
 
-    public void setLastLotValueChange(int lastLotValueChange) {
+    public void setLastLotValueChange(String lastLotValueChange) {
         this.lastLotValueChange = lastLotValueChange;
     }
 }
