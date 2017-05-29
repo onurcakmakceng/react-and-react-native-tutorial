@@ -3,18 +3,18 @@
 #### (Not: Bu bölümdeki anlatımlar rehberin devamında kullanacağımız ortamı hazırlamak için olan kurulum adımları değildir. Rehberde esas alınacak kurulum adımları NPM ile React Kurulumunun anlatıldığı bir sonraki başlıktadır.)
 * React’ı birkaç şekilde kullanmaya başlayabilirsiniz. Eğer sadece denemek/incelemek istiyorsanız CodePen’deki [“Hello, world!”](https://codepen.io/gaearon/pen/rrpgNB?editors=0010) uygulamasına göz atabilirsiniz.
 * Denemek yerine geliştirme yapmaya başlamak istiyorsanız birinci yöntem olarak; HTML dosyanızın içine React kütüphanesini kaynak olarak vererek geliştirme yapmaya başlayabilirsiniz. Bunun için şu iki JavaScript kütüphanesini HTML dosyasına eklemeniz gerekmektedir:
-  ```html
+  ````html
   <script src="https://unpkg.com/react@latest/dist/react.js"></script>
   <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
-  ```
+  ````
 * Bu haliyle React kütüphanelerini kullanarak yazacağınız javascript kodlarıyla uygulamanızı geliştirebilirsiniz; ancak kodlarınızı jsx halinde yazmak istiyorsanız üçüncü bir kütüphane gereklidir:
-  ```html
+  ````html
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  ```
+  ````
 * Bu kütüphaneyi de ekledikten sonra,
-  ```html
+  ````html
   <script type="text/babel">   </script>
-  ```
+  ````
   etiketleri içine yazacağınız JSX kodları, React kütüphanesini kullanan JavaScript kodlarına çevrilip çalıştırılacaktır.
 * Bu şekilde çalışan örnek bir [HTML dosyası](https://facebook.github.io/react/downloads/single-file-example.html)
 * Dilerseniz [babeljs.io](https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&code=ReactDOM.render(%0A%20%20%20%20%3Ch2%3EMerhaba!%3C%2Fh2%3E%0A)%3B) sitesinden JSX halinde yazdığınız kodların nasıl JavaScript’e çevrildiğini inceleyebilirsiniz.
@@ -22,18 +22,18 @@
 * Geliştirme yapmaya başlamak, React projesi oluşturmak için bir başka yöntem ise npm kullanmaktır. Bu rehberde yukarıdaki yöntemler değil, npm kullanılarak oluşturulmuş bir proje üzerinden ilerlenecektir. Npm, JavaScript için bir paket yöneticisidir (package manager). JavaScript geliştiricilerinin kod paylaşmasını ve paylaşılan kodların güncellenmesini kolaylaştırır. Projenizi geliştirirken ihtiyaç duyduğunuz kütüphaneleri tek komutla yüklemenizi sağlar.
 * Npm’i kullanmaya başlamak için bilgisayarınıza Node.js kurmanız gerekmektedir. Npm, Node.js ile birlikte yüklenir. Bu yüzden önce linkten [Node.js indirip](https://nodejs.org/en/) bilgisayarınıza kurunuz. Bu işlemden sonra npm komutlarını kullanmaya başlayabilirsiniz.
 * Yeni bir React projesi oluşturmak için önce “npm install” komutu ile “create-react-app” paketini indiriniz:
-  ```terminal
+  ````terminal
   npm install -g create-react-app
-  ```
+  ````
 * Daha sonra bu “create-react-app” komutunu kullanarak “stock-market-react-client” isminde bir React projesi oluşturunuz:
-  ```terminal
+  ````terminal
   create-react-app stock-market-react-client
-  ```
+  ````
 * Bu komuttan sonra bulunduğunuz konumda “stock-market-react-client” isminde bir klasör oluşmuş olmalıdır. Daha sonra bu proje klasörünün içine girip “npm start” komutu ile sunucuyu başlatınız:
-  ```terminal
+  ````terminal
   cd stock-market-react-client
   npm start
-  ```
+  ````
 * Şimdi tarayıcınızdan “http://localhost:3000” adresine girerek React istemcinizin çalışıp çalışmadığını kontrol edebilirsiniz. Şu şekilde bir ekranla karşılaşmanız gereklidir:
 ![welcome-to-react](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/welcome-to-react.bmp)
 * Artık dosyaları değiştirerek geliştirme yapmaya başlayabilirsiniz. Sunucu, dosyalar üzerinde yaptığınız değişiklikleri fark edip her değişiklikten sonra yazdığınız JSX kodlarını derleyerek tarayıcınızın çalıştırabileceği JavaScript koduna dönüştürecektir. Bu yüzden sunucunuzu hiç kapatıp açmadan anlık olarak kod üzerinde yaptığınız değişiklikleri “http://localhost:3000” adresine girerek sayfanızda görüntüleyebilirsiniz.
@@ -44,7 +44,7 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
 ![component_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/component_structure.png)
 * React, tek sayfa uygulaması(single-page application) yapmak için kullanılır. Bu tarz uygulamalar bileşen(component) tabanlıdır. Sayfada gördüğünüz neredeyse herşey bir bileşendir ve bazı bileşenler başka bileşenlerin çocuğu şeklindedir.
 * Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe [public/index.html](public/index.html) dosyasının body etiketleri arasına bakıldığında;
-  ```html
+  ````html
   ...
    <body>
      <noscript>
@@ -63,10 +63,10 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
      -->
    </body>
   </html>
-  ```
+  ````
   Gördüğünüz gibi id’si “root” olan içi boş bir div bulunmaktadır.
 * [src/index.js](src/index.js) dosyası incelendiğinde;
-  ```jsx
+  ````jsx
   import React from 'react';
   import ReactDOM from 'react-dom';
   import App from './App';
@@ -76,29 +76,29 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
   ReactDOM.render(<App />, document.getElementById('root'));
 
   registerServiceWorker();
-  ```
+  ````
   Burada gördüğünüz
-  ```jsx
+  ````jsx
   ReactDOM.render(<App />, document.getElementById('root'));
-  ```
+  ````
   satırı; “<App />” bileşeninin, az önce [index.html](public/index.html)’de gördüğünüz id’si “root” olan div’in içinde oluşmasını sağlar.
 * Sonrasında [src/App.js](src/App.js) dosyası incelendiğinde, burda App isimli bileşenin içeriğini görebilirsiniz. Burda “render()” fonksiyonunun içinde döndürülen içerik “http://localhost:3000” sayfasını açtığınızda gördüğünüz içerik ile aynıdır. Yani App bileşeni index.js tarafından index.html içindeki id’si “root” olan divin içine konmuştur.
 * Artık projeyi borsa uygulamasına dönüştürmek amacıyla bir takım değişiklikler yapılacaktır.
 * [src](src) klasörü altına Title.js isminde bir dosya oluşturunuz. Dosyanın içeriği şu şekilde olmalıdır:
-```jsx
-import React, { Component } from 'react';
- 
-class Title extends Component {
-   render() {
-       return (
-           <h3>
-               Borsa Uygulaması
-           </h3>
-       );
-   }
-}
-export default Title;
-```
+  ````jsx
+  import React, { Component } from 'react';
+
+  class Title extends Component {
+     render() {
+         return (
+             <h3>
+                 Borsa Uygulaması
+             </h3>
+         );
+     }
+  }
+  export default Title;
+  ````
 * Burada “Title” isminde bir bileşen oluşturmuş oldunuz. Ayrıca bu bileşenin "render()" fonksiyonunun döndüreceği HTML'i tanımlayarak bileşenin ekrana yansıtılacak arayüzü de oluşturuldu. Burada dikkat ederseniz "return" içine hiç bir string belirteci, string'in satırlara bölündüğünü ifade eden ayraçlar veya benzeri bir şey koymadan direk saf HTML halini yazabildik. Bu JSX'in sağladığı ve JavaScript'e göre çok büyük avantaj sağlayan bir özelliktir.
 * Şimdi ```<App />``` bileşeninin yerine ```<Title />``` bileşeninin “index.html” içindeki id’si “root” olan div’in içine konması için [src/index.js](src/index.js) dosyasına geri dönerek içeriğini şu şekilde değiştirin:
     ```jsx
