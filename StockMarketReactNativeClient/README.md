@@ -97,20 +97,20 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
 * Şimdi oluşturduğumuz dosyaların içeriklerini aşağıdaki şekilde değiştirelim. Burada değinmemiz gereken nokta sadece HTML etiketlerini mobil bileşen etiketlerine dönüştürerek ve proje ismi gibi ufak yerlerde değişiklikler yaparak React Native'e geçişin nasıl sağlandığına dikkat edilmeli.
   #### Title.js
   ````jsx
-  import React, { Component } from 'react';
-  import {
+ import React, { Component } from 'react';
+ import {
      Text
-  } from 'react-native';
+ } from 'react-native';
 
-  export default class Title extends Component {
+ export default class Title extends Component {
      render() {
          return (
-             <Text style={{fontWeight: 'bold'}}>
-                 Exchange App React Client
+             <Text style={{fontWeight: 'bold', fontSize: 30}}>
+                 Borsa Uygulaması
              </Text>
          );
      }
-  }
+ }
   ````
  
  
@@ -150,48 +150,48 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
 
   #### Stock.js
   ````jsx
-  import React, { Component } from 'react';
-  import {
+ import React, { Component } from 'react';
+ import {
      Text,
      View,
      Button
-  } from 'react-native';
-  import Moment from 'moment';
-  import StockGraph from './StockGraph';
+ } from 'react-native';
+ import Moment from 'moment';
+ import StockGraph from './StockGraph';
 
-  export default class Stock extends Component {
+ export default class Stock extends Component {
 
      constructor(props) {
          super(props);
-         this.state = {showButtonVisibility: true, hideButtonVisibility: false, stockGraph: null};
+         this.state = {getGraphButtonVisibility: true, removeGraphButtonVisibility: false, stockGraph: null};
          this.getGraph = this.getGraph.bind(this);
          this.removeGraph = this.removeGraph.bind(this);
      }
 
      getGraph() {
          this.setState({stockGraph: <StockGraph stockName={this.props.stockName}/>});
-         this.setState({showButtonVisibility: false, hideButtonVisibility: true});
+         this.setState({getGraphButtonVisibility: false, removeGraphButtonVisibility: true});
      }
 
      removeGraph() {
          this.setState({stockGraph: null});
-         this.setState({showButtonVisibility: true, hideButtonVisibility: false});
+         this.setState({getGraphButtonVisibility: true, removeGraphButtonVisibility: false});
      }
 
      render() {
          return (
              <View>
                  <View style={{ flexDirection: 'row'}}>
-                     <View style={{flexDirection: 'column'}}><Text>{this.props.stockName}  </Text></View>
-                     <View style={{flexDirection: 'column'}}><Text>{this.props.lotValue}  </Text></View>
-                     <View style={{flexDirection: 'column'}}><Text>{this.props.lotCount}  </Text></View>
-                     <View style={{flexDirection: 'column'}}><Text>{this.props.totalValue}  </Text></View>
-                     <View style={{flexDirection: 'column'}}><Text>{Moment(this.props.timestamp).format('MMM YYYY')}  </Text></View>
-                     <View style={{flexDirection: 'column'}}><Text>{this.props.change}</Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.stockName}  </Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.lotValue}  </Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.lotCount}  </Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.totalValue}  </Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{Moment(this.props.timestamp).format('MMM YYYY')}  </Text></View>
+                     <View style={{flexDirection: 'column'}}><Text style={{fontWeight: 'bold', fontSize: 20}}>{this.props.change}</Text></View>
                  </View>
                  <View style={{flexDirection: 'row'}}>
-                     <Button onPress={this.getGraph} disabled={!this.state.showButtonVisibility} title="Get Graph"/>
-                     <Button onPress={this.removeGraph} disabled={!this.state.hideButtonVisibility} title="Remove Graph"/>
+                     <Button onPress={this.getGraph} disabled={!this.state.getGraphButtonVisibility} title="Grafiği Oluştur"/>
+                     <Button onPress={this.removeGraph} disabled={!this.state.removeGraphButtonVisibility} title="Grafiği Kaldır"/>
                  </View>
                  <View style={{flexDirection: 'row'}}>
                      {this.state.stockGraph}
@@ -200,7 +200,7 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
              </View>
          );
      }
-  }
+ }
   ````
 
 
