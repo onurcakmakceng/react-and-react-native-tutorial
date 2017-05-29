@@ -117,75 +117,75 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
 * Şimdi eğer “npm start” komutuyla başlattığınız sunucuyu kapatmadıysanız, http://localhost:3000 ’e girdiğinizde karşınıza bu şekilde bir sayfa çıkmalı:  
   ![just_title2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/just_title2.png)
 * Görüğünüz gibi App bileşeni yerine Title bileşeni index.html içine eklendi. Şimdi borsa uygulamasının diğer bileşenlerinin dosyalarını da “...\stock-market-react-client\src” klasörü altına oluşturunuz. Oluşturulacak dosyaların isimleri ve içerikleri:
-#### StockGraph.js
-```jsx
-import React, { Component } from 'react';
+  #### StockGraph.js
+  ````jsx
+  import React, { Component } from 'react';
+
+  class Title extends Component {
+     render() {
+         return (
+             <h3>
+                 Grafiği daha sonra ekleyeceğiz.
+             </h3>
+         );
+     }
+  }
+
+  export default Title;
+  ````
  
-class Title extends Component {
-   render() {
-       return (
-           <h3>
-               Grafiği daha sonra ekleyeceğiz.
-           </h3>
-       );
-   }
-}
- 
-export default Title;
-```
- 
-#### Stock.js
-```jsx
-import React, { Component } from 'react';
- 
-class Stock extends Component {
- 
-   render() {
-       return (
-           <tbody>
-           <tr>
-               <td>Şirket adı </td>
-               <td>Hisse değeri </td>
-               <td>Hisse sayısı </td>
-               <td>Toplam değeri </td>
-               <td>Tarih </td>
-               <td>Değişim </td>
-               <td>
-                   <button>Grafiği Oluştur</button>
-                   <button>Grafiği Kaldır</button>
-               </td>
-           </tr>
-           </tbody>
-       );
-   }
-}
- 
-export default Stock;
-```
+  #### Stock.js
+  ````jsx
+  import React, { Component } from 'react';
+
+  class Stock extends Component {
+
+     render() {
+         return (
+             <tbody>
+             <tr>
+                 <td>Şirket adı </td>
+                 <td>Hisse değeri </td>
+                 <td>Hisse sayısı </td>
+                 <td>Toplam değeri </td>
+                 <td>Tarih </td>
+                 <td>Değişim </td>
+                 <td>
+                     <button>Grafiği Oluştur</button>
+                     <button>Grafiği Kaldır</button>
+                 </td>
+             </tr>
+             </tbody>
+         );
+     }
+  }
+
+  export default Stock;
+  ````
  
  
-#### StockList.js
-```jsx
-import React, { Component } from 'react';
-import Stock from './Stock';
- 
-class StockList extends Component {
- 
-   render() {
-       return (
-           <table>
-               <Stock />
-               <Stock />
-               <Stock />
-               <Stock />
-               <Stock />
-           </table>
-       );
-   }
-}
- 
-export default StockList;
-```
+  #### StockList.js
+  ````jsx
+  import React, { Component } from 'react';
+  import Stock from './Stock';
+
+  class StockList extends Component {
+
+     render() {
+         return (
+             <table>
+                 <Stock />
+                 <Stock />
+                 <Stock />
+                 <Stock />
+                 <Stock />
+             </table>
+         );
+     }
+  }
+
+  export default StockList;
+  ````
  
  
 * Son olarak “...\stock-market-react-client\src\index.js” dosyasını şu şekilde değiştiriniz:
@@ -496,7 +496,7 @@ export default StockList;
   import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
   ````
  
-* Gördüğünüz gibi kısa bir süre içinde bir single-page application yapmış olduk. Bileşen mantığını, bileşen oluşturma ve kaldırmayı, bileşenlerin props ve state verilerini set etmeyi ve state’ini değiştirmeyi, başka kütüphaneler kullanmayı, istek yapmayı, isteğin cevabına göre döngüsel şekilde bileşen oluşturmayı, fonksiyonları ve olay ele almayı(event handling) görmüş olduk.
+* Gördüğünüz gibi kısa bir süre içinde bir single-page application yapmış olduk. Bileşen mantığını, bileşen oluşturma ve kaldırmayı, bileşenlerin props ve state verilerini set etmeyi ve state’ini değiştirmeyi, başka kütüphaneler kullanmayı, istek yapmayı, isteğin cevabına göre döngüsel şekilde bileşen oluşturmayı, fonksiyonları ve olay ele almayı(event handling) görmüş olduk.  
   !(complete2.)[https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png]
 
 
