@@ -52,30 +52,26 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
   * Windows için:
     ```
     Control Panel → System and Security → System → Change settings → Advanced System Settings → Environment variables → New
+    ```  
+    
+    <img src="https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/env-var.png" width="600" alt="env-var">    
+  
+     (Android SDK’nızı başka bir yere kurduysanız burada kurduğunuz yeri veriniz.)  
+  * Linux için:  ~/.profile dosyasına(veya linux dağıtımınıza göre eşdeğerine) aşağıdaki satırları ekleyiniz.
+    ```terminal
+    export ANDROID_HOME=${HOME}/Android/Sdk
+    export PATH=${PATH}:${ANDROID_HOME}/tools
+    export PATH=${PATH}:${ANDROID_HOME}/platform-tools
     ```
-    (Android SDK’nızı başka bir yere kurduysanız burada kurduğunuz yeri veriniz.)
- 
-Linux için:
- 
-~/.profile dosyasına(veya linux dağıtımınıza göre eşdeğerine) aşağıdaki satırları ekleyiniz:
-```terminal
-export ANDROID_HOME=${HOME}/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-```
- 
-macOS için:
-
-~/.profile dosyasına aşağıdaki satırları ekleyiniz:
- 
-```terminal
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-```
+  * macOS için:  ~/.profile dosyasına aşağıdaki satırları ekleyiniz.
+    ```terminal
+    export ANDROID_HOME=${HOME}/Library/Android/sdk
+    export PATH=${PATH}:${ANDROID_HOME}/tools
+    export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+    ```
 * ANDROID_HOME çevresel değişkenini ayarladıktan sonra açık olan shell ekranlarınızı (varsa) kapatıp tekrar açınız (değişikliklerin yansıması için).
  
-Bu adımlardan sonra “AVD Manager” ekranından  var olan bir AVD(Android Virtual Device)’nizi edit’leyerek aşağıdaki ayarları verebilir yada aşağıdaki ayarlarla yeni bir tane oluşturabilirsiniz:
+* Bu adımlardan sonra “AVD Manager” ekranından  var olan bir AVD(Android Virtual Device)’nizi edit’leyerek aşağıdaki ayarları verebilir yada aşağıdaki ayarlarla yeni bir tane oluşturabilirsiniz:
  
 Device: "Android 6.0 - API Level 23"
 CPU/ABI: “Intel Atom (x86_64)”
