@@ -269,61 +269,61 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
      });
   ````
  
-#### Örnek Veri:
-```json
-[
-   {
-      "stockRecord":{
-         "timestamp":1455224400000,
-         "stockName":"THYAO",
-         "lotCount":86205183,
-         "lotValue":6.66,
-         "totalValue":5.74126528E8
-      },
-      "lastLotValueChange":-1
-   },
-   {
-      "stockRecord":{
-         "timestamp":1455224400000,
-         "stockName":"KCHOL",
-         "lotCount":71888838,
-         "lotValue":11.51,
-         "totalValue":8.27440512E8
-      },
-      "lastLotValueChange":-1
-   },
-   {
-      "stockRecord":{
-         "timestamp":1455224400000,
-         "stockName":"GSRAY",
-         "lotCount":817816,
-         "lotValue":16.9,
-         "totalValue":1.382109E7
-      },
-      "lastLotValueChange":1
-   },
-   {
-      "stockRecord":{
-         "timestamp":1455224400000,
-         "stockName":"ASELS",
-         "lotCount":5735352,
-         "lotValue":17.13,
-         "totalValue":9.8246576E7
-      },
-      "lastLotValueChange":-1
-   },
-   {
-      "stockRecord":{
-         "timestamp":1455224400000,
-         "stockName":"ADEL",
-         "lotCount":83491,
-         "lotValue":59.25,
-         "totalValue":4946842.0
-      },
-      "lastLotValueChange":-1
-   }
-]
-```
+  #### Örnek Veri:
+  ````json
+  [
+     {
+        "stockRecord":{
+           "timestamp":1455224400000,
+           "stockName":"THYAO",
+           "lotCount":86205183,
+           "lotValue":6.66,
+           "totalValue":5.74126528E8
+        },
+        "lastLotValueChange":-1
+     },
+     {
+        "stockRecord":{
+           "timestamp":1455224400000,
+           "stockName":"KCHOL",
+           "lotCount":71888838,
+           "lotValue":11.51,
+           "totalValue":8.27440512E8
+        },
+        "lastLotValueChange":-1
+     },
+     {
+        "stockRecord":{
+           "timestamp":1455224400000,
+           "stockName":"GSRAY",
+           "lotCount":817816,
+           "lotValue":16.9,
+           "totalValue":1.382109E7
+        },
+        "lastLotValueChange":1
+     },
+     {
+        "stockRecord":{
+           "timestamp":1455224400000,
+           "stockName":"ASELS",
+           "lotCount":5735352,
+           "lotValue":17.13,
+           "totalValue":9.8246576E7
+        },
+        "lastLotValueChange":-1
+     },
+     {
+        "stockRecord":{
+           "timestamp":1455224400000,
+           "stockName":"ADEL",
+           "lotCount":83491,
+           "lotValue":59.25,
+           "totalValue":4946842.0
+        },
+        "lastLotValueChange":-1
+     }
+  ]
+  ````
  
 * Daha sonra render() fonksiyonu içinde this.state.stockList şeklinde stockList dizisine ulaşılıp, içindeki veri kadar <Stock /> bileşeni üretilmiştir.
   ````jsx
@@ -497,7 +497,7 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
   ````
  
 * Gördüğünüz gibi kısa bir süre içinde bir single-page application yapmış olduk. Bileşen mantığını, bileşen oluşturma ve kaldırmayı, bileşenlerin props ve state verilerini set etmeyi ve state’ini değiştirmeyi, başka kütüphaneler kullanmayı, istek yapmayı, isteğin cevabına göre döngüsel şekilde bileşen oluşturmayı, fonksiyonları ve olay ele almayı(event handling) görmüş olduk.  
-  !(complete2.)[https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png]
+  ![complete2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png)
 
 
 #### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
