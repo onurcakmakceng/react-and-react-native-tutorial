@@ -41,7 +41,7 @@
 Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu projeyi geliştirerek ilerleyecektir. Bir önceki aşamada (NPM ile React Kurulumu) oluşturulan proje üzerinden devam edilecektir. Uygulama 5 adet şirketin borsa verilerini (hisse kaydı tarihi, hisse adı, hisse değeri, hisse sayısı, toplam değeri, hisse değeri değişimi gibi) oluşturmuş olduğumuz Spring RESTful web servis’ten çekerek kullanıcıya liste şeklinde sunar. Listedeki her şirketin yanında “Grafiği Oluştur” veya “Grafiği Kaldır” butonları bulunur. “Grafiği Oluştur” butonuna tıklandığında şirketin 2015-2016 aralığında hisse değeri verisi yine Spring RESTful web servisten çekilerek oluşturulan grafik bileşeninde sergilenir. “Grafiği Kaldır” butonu ise oluşturulmuş grafik bileşenini kaldırır.
 ### React ile Oluşturulacak Web İstemcisinin Yapısı:
 ![project_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/project_structure.png)
-![component_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/component_structure.png)
+![component_structure](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/component_structure2.png)
 * React, tek sayfa uygulaması(single-page application) yapmak için kullanılır. Bu tarz uygulamalar bileşen(component) tabanlıdır. Sayfada gördüğünüz neredeyse herşey bir bileşendir ve bazı bileşenler başka bileşenlerin çocuğu şeklindedir.
 * Şimdi oluşturduğunuz “stock-market-react-client” isimli proje klasöründe [public/index.html](public/index.html) dosyasının body etiketleri arasına bakıldığında;
   ````html
@@ -415,7 +415,7 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
   ````
  
 * Bu adımdan sonra uygulama çalışacaktır ve görüntüsü şu şekilde olacaktır:
-  ![without_graph2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/without_graph2.png)
+  ![without_graph2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/without_graph3.png)
  
 * Görüldüğü üzere veriler başarıyla çekilmiş ve listeye eklenmiştir. Daha önce bakıldığında “Grafiği Oluştur” ve “Grafiği Kaldır” şeklinde iki buton varken şimdi “Grafiği Oluştur” isminde tek buton var. Bu butona tıklandığında verilerin olduğu satırın hemen altında “Grafiği daha sonra ekleyeceğiz.” yazısı oluşup buton kaybolmakta ve yerine “Grafiği Kaldır” butonu gelmektedir.
  
@@ -510,7 +510,7 @@ Proje kapsamında basit bir borsa uygulaması yapılacaktır ve React rehberi bu
   ````
  
 * Gördüğünüz gibi kısa bir süre içinde bir single-page application yapmış olduk. Bileşen mantığını, bileşen oluşturma ve kaldırmayı, bileşenlerin props ve state verilerini set etmeyi ve state’ini değiştirmeyi, başka kütüphaneler kullanmayı, istek yapmayı, isteğin cevabına göre döngüsel şekilde bileşen oluşturmayı, fonksiyonları ve olay ele almayı(event handling) görmüş olduk.  
-  ![complete2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png)
+  ![complete2](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete3.gif)
 
 
 #### [-->Bir Sonraki Adıma Geç: React Native Kurulumu ve Borsa Uygulaması Mobil İstemcisi Yapım Rehberi](/StockMarketReactNativeClient/README.md)
