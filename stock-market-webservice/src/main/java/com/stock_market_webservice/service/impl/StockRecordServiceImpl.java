@@ -36,10 +36,10 @@ public class StockRecordServiceImpl implements StockRecordService{
         for(int i = 0; i < this.stockCount; ++i) {
             if(stockRecordList.size() > this.stockCount && stockRecordList.get(i).getLotValue() != stockRecordList.get(i + this.stockCount).getLotValue()) {
                 // Put object and +1 if last lotValue bigger then, else put object and -1 to map.
-                StockRecordDTO stockRecordDTO = new StockRecordDTO(stockRecordList.get(i), (stockRecordList.get(i).getLotValue() > stockRecordList.get(i + this.stockCount).getLotValue()? 1: -1) );
+                StockRecordDTO stockRecordDTO = new StockRecordDTO(stockRecordList.get(i), (stockRecordList.get(i).getLotValue() > stockRecordList.get(i + this.stockCount).getLotValue()? "↑": "↓") );
                 stockRecordDTOList.add(stockRecordDTO);
             } else {
-                StockRecordDTO stockRecordDTO = new StockRecordDTO(stockRecordList.get(i), 0 );
+                StockRecordDTO stockRecordDTO = new StockRecordDTO(stockRecordList.get(i), "↔" );
                 stockRecordDTOList.add(stockRecordDTO);
             }
 
