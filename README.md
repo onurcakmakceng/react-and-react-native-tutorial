@@ -20,7 +20,7 @@ React Kullanmanın Avantajları:
 * Daha anlaşılır ve sade kodlar,
 * Hızlı öğrenme (JSX, Javascript kodlamak gibidir. Sadece temel JavaScript ve HTML bilgisi yeterlidir),
 * Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş. (Kodu bir kere yazıp her yerde kullanabilme. JSX iş mantığı kodları aynı kalarak sadece HTML etiketleri değişiyor)
-* React'tan React Native'e geçişle oluşturulan mobil uygulama hibrid\*  gerçekten native mobil bileşenlerle oluşturulan bir uygulamadır.
+* React'tan React Native'e geçişle oluşturulan mobil uygulama hibrid\* bir uygulama değil gerçekten native mobil bileşenlerle oluşturulan bir uygulamadır.
 * JSX sayesinde derleme anında hataların tespit edilmesi
   
 </br>\* Hibrid Uygulama: Mobil uygulama içine web tarayıcısı gömülerek oluşturulan mobil uygulama. Ionic, PhoneGap gibi
