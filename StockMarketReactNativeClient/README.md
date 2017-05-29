@@ -97,20 +97,20 @@ Borsa Uygulamasının mobil versionu için rehberimizim bir önceki aşamasında
 * Şimdi oluşturduğumuz dosyaların içeriklerini aşağıdaki şekilde değiştirelim. Burada değinmemiz gereken nokta sadece HTML etiketlerini mobil bileşen etiketlerine dönüştürerek ve proje ismi gibi ufak yerlerde değişiklikler yaparak React Native'e geçişin nasıl sağlandığına dikkat edilmeli.
   #### Title.js
   ````jsx
- import React, { Component } from 'react';
- import {
-     Text
- } from 'react-native';
+  import React, { Component } from 'react';
+  import {
+      Text
+  } from 'react-native';
 
- export default class Title extends Component {
-     render() {
-         return (
-             <Text style={{fontWeight: 'bold', fontSize: 30}}>
-                 Borsa Uygulaması
-             </Text>
-         );
-     }
- }
+  export default class Title extends Component {
+      render() {
+          return (
+              <Text style={{fontWeight: 'bold', fontSize: 30}}>
+                  Borsa Uygulaması
+              </Text>
+          );
+      }
+  }
   ````
  
  
