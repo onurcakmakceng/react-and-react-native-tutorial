@@ -10,7 +10,7 @@ Anlatıma yardımcı olması için basit bir web ve mobil Borsa Uygulaması (Sim
 </br>React Native mobil uygulaması, React ile geliştirilen bir web uygulamasının sadece HTML (view/template engine) arayüz etiketlerinin değiştirilmesiyle iş mantığı kodlarının değiştirilmeden mobil uygulamaya kolayca çevirilebildiğini göstermek amacıyla yapılmıştır.
 
 ## React Nedir, Neden React?
-React, bileşen tabanlı tek sayfalı web uygulamaları yapmak için geliştirilmiş açık kaynak kodlu bir JavaScript kütüphanesidir. Daha kolay, rahat ve hızlı bir şekilde web istemcisi yapılabilmesini sağlar. Geliştirilen istemci, web servisi (Backend) kısmında istenen teknolojideki servisle kolayca iletişim kurabilir. Web istemcisinin arayüz işlemlerini (arayüzün dinamikleştirilmesini) kolaylaştırır ve güzel bir görünüm sunar. Facebook şirketinin önderliğinde geliştirilmiştir. Bu yüzden gittikçe daha da popülerleşmekte, kullanımı yaygınlaşmaktadır ve sağlanan destek de üst düzeydedir. 2013 Mart’ta ilk sürümünün çıkmış olmasına rağmen günümüzde en son 15.5.4 versiyonu çıkmıştır ve bu da ne kadar büyük bir hızla geliştiğini, ilgi gördüğünü göstermektedir.  
+React, bileşen tabanlı tek sayfalı web uygulamaları yapmak için geliştirilmiş açık kaynak kodlu bir JavaScript kütüphanesidir. Daha kolay, rahat ve hızlı bir şekilde web istemcisi yapılabilmesini sağlar. Geliştirilen istemci, web servisi (Backend) kısmında istenen teknolojideki servisle kolayca iletişim kurabilir. Web istemcisinin arayüz işlemlerini (arayüzün dinamikleştirilmesini) kolaylaştırır ve güzel bir görünüm sunar. Facebook şirketinin önderliğinde geliştirilmiştir ve üst düzeyde bir destek sağlanmaktadır. Bu yüzden gittikçe daha da popülerleşmekte, kullanımı yaygınlaşmaktadır. 2013 Mart’ta ilk sürümünün çıkmış olmasına rağmen günümüzde en son 15.5.4 versiyonu çıkmıştır. Bu da ne kadar büyük bir hızla geliştiğini, ilgi gördüğünü göstermektedir.  
 </br>
 </br>
   <img src="http://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" width="350" alt="react-logo">  
@@ -19,11 +19,11 @@ React Kullanmanın Avantajları:
 * Kolay kullanım,
 * Daha anlaşılır ve sade kodlar,
 * Hızlı öğrenme (JSX, Javascript kodlamak gibidir. Sadece temel JavaScript ve HTML bilgisi yeterlidir),
-* Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş. (Kodu bir kere yazıp her yerde kullanabilme. JSX iş mantığı kodları aynı kalarak sadece HTML etiketleri değişiyor)
-* React'tan React Native'e geçişle oluşturulan mobil uygulama hibrid\* bir uygulama değil gerçekten native mobil bileşenlerle oluşturulan bir uygulamadır.
+* Web uygulamasından hızlı ve kolay bir şekilde mobil uygulamaya geçiş. (Kodu bir kere yazıp her yerde kullanabilme. JSX iş mantığı kodları aynı kalarak sadece HTML etiketleri değiştiriliyor.)
+* React'tan React Native'e geçişle oluşturulan mobil uygulamalar hibrid\* uygulamalar değil gerçekten native mobil bileşenlerle oluşturulan uygulamalardır.
 * JSX sayesinde derleme anında hataların tespit edilmesi
   
-</br>\* Hibrid Uygulama: Mobil uygulama içine web tarayıcısı gömülerek oluşturulan mobil uygulama. Ionic, PhoneGap gibi
+</br>\* Hibrid Uygulama: Mobil uygulama içine web tarayıcısı gömülerek oluşturulan mobil uygulama. Ionic, PhoneGap gibi  
 
 ## Geliştirilen Borsa Uygulaması
 Geliştirilen projede:
@@ -32,7 +32,7 @@ Geliştirilen projede:
 * React web istemcisi, RESTful Spring web servisimiz ile JSON veri alış verişinde bulunup ekranda hisselerin son değerlerini listeleyebilecek ve her şirketin 1 senelik hisse değeri grafiğini ekrana çizebilecektir.  
   <img src="https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete3.gif" width="650" alt="react-final">  
   
-* Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini mobil uygulama da yapabilecek.  
+* Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini yapabilecektir.  
   <img src="https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/react_native_final2.gif" width="350" alt="react_native_final">  
   
 </br>(Not: Bu proje, belirli bir aralığa ait örnek bir data oluşturularak yapıldığı için veriler günümüz canlı borsa verileri değildir. Bunun nedeni, proje amacının öğretici bir React rehberi hazırlamak olmasıdır. Eğer güncel verilerle canlı bir borsa uygulaması yapılmak istenirse React ve React Native istemcileri çeşitli Borsa API'lerine bağlanabilir/iletişim kurdurulabilir. (Örnek: https://apiportal.akbank.com/)
