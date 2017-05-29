@@ -27,6 +27,7 @@ Geliştirilen projede:
 * Spring web servisi, PostgreSQL veri tabanına 5 BIST şirketinin 2015-2016 yılları arasındaki hisse değerlerinin kaydını oluşturacak ve bunları RESTful servis olarak hizmete sunacak,
 ![database](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/main%20readme%20images/database.PNG)
 * React web istemcisi, RESTful Spring web servisimiz ile JSON veri alış verişinde bulunup ekranda hisselerin son değerlerini listeleyebilecek ve her şirketin 1 senelik hisse değeri grafiğini ekrana çizebilecektir.
+![react_final](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-client%20readme%20images/complete2.png)
 * Ve React web projesinden React Native mobil projesine geçişin ne kadar kolay olduğunu göstermek için oluşturduğumuz mobil React Native istemcisi de web istemcisinin yapabildiklerini mobil uygulama da yapabilecek.
 ![react_native_final](https://github.com/onurd-ck/react-and-react-native-tutorial/blob/master/tutorial%20files/stock-market-react-native-client%20readme%20images/react_native_final.gif)
   
