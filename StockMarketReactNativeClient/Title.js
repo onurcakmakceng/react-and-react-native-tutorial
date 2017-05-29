@@ -6,8 +6,8 @@ import {
 export default class Title extends Component {
     render() {
         return (
-            <Text style={{fontWeight: 'bold'}}>
-                Exchange App React Client
+            <Text style={{fontWeight: 'bold', fontSize: 30}}>
+                Borsa Uygulaması
             </Text>
         );
     }

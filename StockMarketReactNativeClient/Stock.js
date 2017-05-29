@@ -30,12 +30,12 @@ export default class Stock extends Component {
         return (
             <View>
                 <View style={{ flexDirection: 'row'}}>
-                    <View style={{flexDirection: 'column'}}><Text>{this.props.stockName}  </Text></View>
-                    <View style={{flexDirection: 'column'}}><Text>{this.props.lotValue}  </Text></View>
-                    <View style={{flexDirection: 'column'}}><Text>{this.props.lotCount}  </Text></View>
-                    <View style={{flexDirection: 'column'}}><Text>{this.props.totalValue}  </Text></View>
-                    <View style={{flexDirection: 'column'}}><Text>{Moment(this.props.timestamp).format('MMM YYYY')}  </Text></View>
-                    <View style={{flexDirection: 'column'}}><Text>{this.props.change}</Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.stockName}  </Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.lotValue}  </Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.lotCount}  </Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{this.props.totalValue}  </Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontSize: 17}}>{Moment(this.props.timestamp).format('MMM YYYY')}  </Text></View>
+                    <View style={{flexDirection: 'column'}}><Text style={{fontWeight: 'bold', fontSize: 20}}>{this.props.change}</Text></View>
                 </View>
                 <View style={{flexDirection: 'row'}}>
                     <Button onPress={this.getGraph} disabled={!this.state.getGraphButtonVisibility} title="Grafiği Oluştur"/>
