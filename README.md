@@ -5,7 +5,7 @@ Anlatıma yardımcı olması için basit bir web ve mobil Borsa Uygulaması (Sim
 * Mobil istemci olarak React Native 
   * (Modül Klasörü: [StockMarketReactNativeClient](StockMarketReactNativeClient))
 * Web servis olarak Spring MVC kullanılmıştır.
-  * (Modül Klasörü: [stock-market-webservice](stock-market-react-client))  
+  * (Modül Klasörü: [stock-market-webservice](stock-market-webservice))  
   
 </br>React Native mobil uygulaması, React ile geliştirilen bir web uygulamasının sadece HTML (view/template engine) arayüz etiketlerinin değiştirilmesiyle iş mantığı kodlarının değiştirilmeden mobil uygulamaya kolayca çevirilebildiğini göstermek amacıyla yapılmıştır.
 
